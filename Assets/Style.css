@@ -22,7 +22,7 @@ header h2 {
 
 .div-utama {
 	max-width: 1080px;
-	margin: 20px auoto;
+	margin: 20px auto;
 	background-color: white;
 	padding: 15px;
 	overflow: hidden;
@@ -64,6 +64,104 @@ header h2 {
 	height: 350px;
 }
 
+.menu-kiri{
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-tengah{
+	width: 530px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-kanan{
+	width: 250px;
+	float: left;
+}
+
+.kotak{
+	border: 1px solid crimson;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.kotak img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.kotak h3{
+	background-color: crimson;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 12px;
+	border-radius: 20px;
+}
+
+.posting{
+	margin-bottom: 12px;
+	text-align: right;
+	color: grey;
+	font-size: 10px;
+}
+
+.tombol{
+	text-decoration: none;
+	padding: 10px;
+	width: 120px;
+	color: white;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+.tombol:hover{
+	background-color: black;
+	transition-duration: 2s
+}
+
+.tombol-pesan{
+	background-color: darkorange;
+}
+
+.tombol-lengkap{
+	background-color: green;
+}
+
+.berita ul{
+	list-style-type: none;
+}
+
+.berita ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 12px;
+	color: black;
+	border-bottom: 1px solid grey;
+	margin-bottom: 10px;
+}
+
+.berita ul li a:hover{
+	color: crimson;
+}
+
+.jadwal{
+	width: 250px;
+	float: left;
+}
+
+.jadwal nav img{
+	width: 100%
+}
+
+.jadwal p{
+	text-align: center;
+}
+
 footer{
 	clear: both;
 	background-color: crimson;
@@ -72,6 +170,7 @@ footer{
 	text-align: center;
 }
 
+/* Tampilan untuk layar handphone */
 @media screen and (max-width:780px){
 	header h2, header p {
 		text-align: center;
@@ -79,5 +178,31 @@ footer{
 	
 	.navigasi li {
 		float: none;
+	}
+	
+	.menu-kiri, .menu-tengah, .menu-kanan{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1080px){
+	.div-utama{
+		width: 100%;
+	}
+	
+	.menu-kiri{
+		width: 25%;
+	}
+	
+	.menu-tengah{
+		width: 68%;
+		float: right;
+	}
+	
+	.menu-kanan{
+		clear: both;
+		float: none;
+		width: 100%;
 	}
 }
